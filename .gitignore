@@ -1,0 +1,19 @@
+# Cache
+.cache/
+**/.cache/
+
+# Logs & temp files
+*.log
+*.swp
+*.tmp
+
+# Secrets (just in case)
+*.key
+*.pem
+secrets*
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+
