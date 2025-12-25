@@ -12,6 +12,8 @@
 *.pem
 secrets*
 .env
+.ssh/
+.gpg/
 
 # OS junk
 .DS_Store
