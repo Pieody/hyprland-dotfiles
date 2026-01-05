@@ -2,11 +2,12 @@
   "position": "top",
   "margin-top": 15,
   "modules-left": [
-    "clock",
+    "custom/media",
     "hyprland/workspaces"
   ],
   "modules-center": [
-    "tray"
+    "tray",
+    "clock"
   ],
   "modules-right": [
     "pulseaudio",
@@ -92,5 +93,17 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
+  },
+  "custom/media": {
+    "format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 20,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl stop",
+    "smooth-scrolling-threshold": 0.5,
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null"
   }
 }

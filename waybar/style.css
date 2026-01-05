@@ -98,3 +98,12 @@ tooltip label {
   color: @fg;
   margin: 0 12px 0 12px;
 }
+
+#custom-media {
+  color: @blue;
+  padding: 0 15px;
+  margin: 0 12px 0 12px;
+  border: 1px solid @bg1;
+  border-radius: 45px;
+
+}
